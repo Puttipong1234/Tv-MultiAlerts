@@ -1,0 +1,5 @@
+enable_alert_1 = input.bool(title = "__EXCHANGE__ : __SYMBOL__",defval = false)
+check_sym_1 = request.security(symbol = "__SYMBOL__" ,timeframe= timeframe.period,expression = check_condition())
+alertcondition(condition = enable_alert_1 and not na(check_sym_1) ,title = "__EXCHANGE__ : __SYMBOL__" , message = "{'exchange':'__EXCHANGE__','symbol':'__SYMBOL__'}" )
+IS_OPEN__1__ = check_sym_1 == "OPEN LONG" ? 1 : check_sym_1 == "TPSL LONG" ? -1 : 0
+plot(IS_OPEN__1__,title = "IS_OPEN__1__?")

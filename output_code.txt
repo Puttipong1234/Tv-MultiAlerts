@@ -1,0 +1,480 @@
+
+
+enable_alert_1 = input.bool(title = "BINANCE : BTCUSDT",defval = false,group = "กรุณาตั้งค่าคู่เทรดที่ต้องการ Alert")
+amount_to_trade_1 = input.float(title = "contract" , defval = 0.05)
+check_sym_1 = request.security(symbol = "BTCUSDT" ,timeframe= timeframe.period,expression = check_condition())
+if enable_alert_1 and check_sym_1 == "OPEN LONG"
+    alert( freq = alert.freq_once_per_bar_close , message = '{"action":"OPEN LONG","exchange":"BINANCE","symbol":"BTCUSDT","amount":"0.05"}' )
+if enable_alert_1 and check_sym_1 == "TPSL LONG"
+    alert( freq = alert.freq_once_per_bar_close , message = '{"action":"TPSL LONG","exchange":"BINANCE","symbol":"BTCUSDT","amount":"0.05"}' )
+    
+    
+    
+
+
+enable_alert_2 = input.bool(title = "BINANCE : ETHUSDT",defval = false,group = "กรุณาตั้งค่าคู่เทรดที่ต้องการ Alert")
+amount_to_trade_2 = input.float(title = "contract" , defval = 0.5)
+check_sym_2 = request.security(symbol = "ETHUSDT" ,timeframe= timeframe.period,expression = check_condition())
+if enable_alert_2 and check_sym_2 == "OPEN LONG"
+    alert( freq = alert.freq_once_per_bar_close , message = '{"action":"OPEN LONG","exchange":"BINANCE","symbol":"ETHUSDT","amount":"0.5"}' )
+if enable_alert_2 and check_sym_2 == "TPSL LONG"
+    alert( freq = alert.freq_once_per_bar_close , message = '{"action":"TPSL LONG","exchange":"BINANCE","symbol":"ETHUSDT","amount":"0.5"}' )
+    
+    
+    
+
+
+enable_alert_3 = input.bool(title = "BINANCE : DOGEUSDT",defval = false,group = "กรุณาตั้งค่าคู่เทรดที่ต้องการ Alert")
+amount_to_trade_3 = input.float(title = "contract" , defval = 2000)
+check_sym_3 = request.security(symbol = "DOGEUSDT" ,timeframe= timeframe.period,expression = check_condition())
+if enable_alert_3 and check_sym_3 == "OPEN LONG"
+    alert( freq = alert.freq_once_per_bar_close , message = '{"action":"OPEN LONG","exchange":"BINANCE","symbol":"DOGEUSDT","amount":"2000"}' )
+if enable_alert_3 and check_sym_3 == "TPSL LONG"
+    alert( freq = alert.freq_once_per_bar_close , message = '{"action":"TPSL LONG","exchange":"BINANCE","symbol":"DOGEUSDT","amount":"2000"}' )
+    
+    
+    
+
+
+enable_alert_4 = input.bool(title = "BINANCE : MATICUSDT",defval = false,group = "กรุณาตั้งค่าคู่เทรดที่ต้องการ Alert")
+amount_to_trade_4 = input.float(title = "contract" , defval = 10000)
+check_sym_4 = request.security(symbol = "MATICUSDT" ,timeframe= timeframe.period,expression = check_condition())
+if enable_alert_4 and check_sym_4 == "OPEN LONG"
+    alert( freq = alert.freq_once_per_bar_close , message = '{"action":"OPEN LONG","exchange":"BINANCE","symbol":"MATICUSDT","amount":"10000"}' )
+if enable_alert_4 and check_sym_4 == "TPSL LONG"
+    alert( freq = alert.freq_once_per_bar_close , message = '{"action":"TPSL LONG","exchange":"BINANCE","symbol":"MATICUSDT","amount":"10000"}' )
+    
+    
+    
+
+
+enable_alert_5 = input.bool(title = "FOREX : FX:EURUSD",defval = false,group = "กรุณาตั้งค่าคู่เทรดที่ต้องการ Alert")
+amount_to_trade_5 = input.float(title = "contract" , defval = 0.01)
+check_sym_5 = request.security(symbol = "FX:EURUSD" ,timeframe= timeframe.period,expression = check_condition())
+if enable_alert_5 and check_sym_5 == "OPEN LONG"
+    alert( freq = alert.freq_once_per_bar_close , message = '{"action":"OPEN LONG","exchange":"FOREX","symbol":"FX:EURUSD","amount":"0.01"}' )
+if enable_alert_5 and check_sym_5 == "TPSL LONG"
+    alert( freq = alert.freq_once_per_bar_close , message = '{"action":"TPSL LONG","exchange":"FOREX","symbol":"FX:EURUSD","amount":"0.01"}' )
+    
+    
+    
+
+
+enable_alert_6 = input.bool(title = "SET : SET:PTT",defval = false,group = "กรุณาตั้งค่าคู่เทรดที่ต้องการ Alert")
+amount_to_trade_6 = input.float(title = "contract" , defval = 0.01)
+check_sym_6 = request.security(symbol = "SET:PTT" ,timeframe= timeframe.period,expression = check_condition())
+if enable_alert_6 and check_sym_6 == "OPEN LONG"
+    alert( freq = alert.freq_once_per_bar_close , message = '{"action":"OPEN LONG","exchange":"SET","symbol":"SET:PTT","amount":"0.01"}' )
+if enable_alert_6 and check_sym_6 == "TPSL LONG"
+    alert( freq = alert.freq_once_per_bar_close , message = '{"action":"TPSL LONG","exchange":"SET","symbol":"SET:PTT","amount":"0.01"}' )
+    
+    
+    
+
+
+enable_alert_7 = input.bool(title = "SET : SET:BEM",defval = false,group = "กรุณาตั้งค่าคู่เทรดที่ต้องการ Alert")
+amount_to_trade_7 = input.float(title = "contract" , defval = 0.01)
+check_sym_7 = request.security(symbol = "SET:BEM" ,timeframe= timeframe.period,expression = check_condition())
+if enable_alert_7 and check_sym_7 == "OPEN LONG"
+    alert( freq = alert.freq_once_per_bar_close , message = '{"action":"OPEN LONG","exchange":"SET","symbol":"SET:BEM","amount":"0.01"}' )
+if enable_alert_7 and check_sym_7 == "TPSL LONG"
+    alert( freq = alert.freq_once_per_bar_close , message = '{"action":"TPSL LONG","exchange":"SET","symbol":"SET:BEM","amount":"0.01"}' )
+    
+    
+    
+
+
+enable_alert_8 = input.bool(title = "SET : SET:IVL",defval = false,group = "กรุณาตั้งค่าคู่เทรดที่ต้องการ Alert")
+amount_to_trade_8 = input.float(title = "contract" , defval = 0.01)
+check_sym_8 = request.security(symbol = "SET:IVL" ,timeframe= timeframe.period,expression = check_condition())
+if enable_alert_8 and check_sym_8 == "OPEN LONG"
+    alert( freq = alert.freq_once_per_bar_close , message = '{"action":"OPEN LONG","exchange":"SET","symbol":"SET:IVL","amount":"0.01"}' )
+if enable_alert_8 and check_sym_8 == "TPSL LONG"
+    alert( freq = alert.freq_once_per_bar_close , message = '{"action":"TPSL LONG","exchange":"SET","symbol":"SET:IVL","amount":"0.01"}' )
+    
+    
+    
+
+
+enable_alert_9 = input.bool(title = "FOREX : FX:GBPUSD",defval = false,group = "กรุณาตั้งค่าคู่เทรดที่ต้องการ Alert")
+amount_to_trade_9 = input.float(title = "contract" , defval = 0.01)
+check_sym_9 = request.security(symbol = "FX:GBPUSD" ,timeframe= timeframe.period,expression = check_condition())
+if enable_alert_9 and check_sym_9 == "OPEN LONG"
+    alert( freq = alert.freq_once_per_bar_close , message = '{"action":"OPEN LONG","exchange":"FOREX","symbol":"FX:GBPUSD","amount":"0.01"}' )
+if enable_alert_9 and check_sym_9 == "TPSL LONG"
+    alert( freq = alert.freq_once_per_bar_close , message = '{"action":"TPSL LONG","exchange":"FOREX","symbol":"FX:GBPUSD","amount":"0.01"}' )
+    
+    
+    
+
+
+enable_alert_10 = input.bool(title = "FOREX : SAXO:JPYUSD",defval = false,group = "กรุณาตั้งค่าคู่เทรดที่ต้องการ Alert")
+amount_to_trade_10 = input.float(title = "contract" , defval = 0.01)
+check_sym_10 = request.security(symbol = "SAXO:JPYUSD" ,timeframe= timeframe.period,expression = check_condition())
+if enable_alert_10 and check_sym_10 == "OPEN LONG"
+    alert( freq = alert.freq_once_per_bar_close , message = '{"action":"OPEN LONG","exchange":"FOREX","symbol":"SAXO:JPYUSD","amount":"0.01"}' )
+if enable_alert_10 and check_sym_10 == "TPSL LONG"
+    alert( freq = alert.freq_once_per_bar_close , message = '{"action":"TPSL LONG","exchange":"FOREX","symbol":"SAXO:JPYUSD","amount":"0.01"}' )
+    
+    
+    
+
+
+enable_alert_11 = input.bool(title = "SET : SET:GULF",defval = false,group = "กรุณาตั้งค่าคู่เทรดที่ต้องการ Alert")
+amount_to_trade_11 = input.float(title = "contract" , defval = 0.01)
+check_sym_11 = request.security(symbol = "SET:GULF" ,timeframe= timeframe.period,expression = check_condition())
+if enable_alert_11 and check_sym_11 == "OPEN LONG"
+    alert( freq = alert.freq_once_per_bar_close , message = '{"action":"OPEN LONG","exchange":"SET","symbol":"SET:GULF","amount":"0.01"}' )
+if enable_alert_11 and check_sym_11 == "TPSL LONG"
+    alert( freq = alert.freq_once_per_bar_close , message = '{"action":"TPSL LONG","exchange":"SET","symbol":"SET:GULF","amount":"0.01"}' )
+    
+    
+    
+
+
+enable_alert_12 = input.bool(title = "BINANCE : DOGEUSDT",defval = false,group = "กรุณาตั้งค่าคู่เทรดที่ต้องการ Alert")
+amount_to_trade_12 = input.float(title = "contract" , defval = 0.01)
+check_sym_12 = request.security(symbol = "DOGEUSDT" ,timeframe= timeframe.period,expression = check_condition())
+if enable_alert_12 and check_sym_12 == "OPEN LONG"
+    alert( freq = alert.freq_once_per_bar_close , message = '{"action":"OPEN LONG","exchange":"BINANCE","symbol":"DOGEUSDT","amount":"0.01"}' )
+if enable_alert_12 and check_sym_12 == "TPSL LONG"
+    alert( freq = alert.freq_once_per_bar_close , message = '{"action":"TPSL LONG","exchange":"BINANCE","symbol":"DOGEUSDT","amount":"0.01"}' )
+    
+    
+    
+
+
+enable_alert_13 = input.bool(title = "BINANCE : DOGEUSDT",defval = false,group = "กรุณาตั้งค่าคู่เทรดที่ต้องการ Alert")
+amount_to_trade_13 = input.float(title = "contract" , defval = 0.01)
+check_sym_13 = request.security(symbol = "DOGEUSDT" ,timeframe= timeframe.period,expression = check_condition())
+if enable_alert_13 and check_sym_13 == "OPEN LONG"
+    alert( freq = alert.freq_once_per_bar_close , message = '{"action":"OPEN LONG","exchange":"BINANCE","symbol":"DOGEUSDT","amount":"0.01"}' )
+if enable_alert_13 and check_sym_13 == "TPSL LONG"
+    alert( freq = alert.freq_once_per_bar_close , message = '{"action":"TPSL LONG","exchange":"BINANCE","symbol":"DOGEUSDT","amount":"0.01"}' )
+    
+    
+    
+
+
+enable_alert_14 = input.bool(title = "BINANCE : DOGEUSDT",defval = false,group = "กรุณาตั้งค่าคู่เทรดที่ต้องการ Alert")
+amount_to_trade_14 = input.float(title = "contract" , defval = 0.01)
+check_sym_14 = request.security(symbol = "DOGEUSDT" ,timeframe= timeframe.period,expression = check_condition())
+if enable_alert_14 and check_sym_14 == "OPEN LONG"
+    alert( freq = alert.freq_once_per_bar_close , message = '{"action":"OPEN LONG","exchange":"BINANCE","symbol":"DOGEUSDT","amount":"0.01"}' )
+if enable_alert_14 and check_sym_14 == "TPSL LONG"
+    alert( freq = alert.freq_once_per_bar_close , message = '{"action":"TPSL LONG","exchange":"BINANCE","symbol":"DOGEUSDT","amount":"0.01"}' )
+    
+    
+    
+
+
+enable_alert_15 = input.bool(title = "BINANCE : DOGEUSDT",defval = false,group = "กรุณาตั้งค่าคู่เทรดที่ต้องการ Alert")
+amount_to_trade_15 = input.float(title = "contract" , defval = 0.01)
+check_sym_15 = request.security(symbol = "DOGEUSDT" ,timeframe= timeframe.period,expression = check_condition())
+if enable_alert_15 and check_sym_15 == "OPEN LONG"
+    alert( freq = alert.freq_once_per_bar_close , message = '{"action":"OPEN LONG","exchange":"BINANCE","symbol":"DOGEUSDT","amount":"0.01"}' )
+if enable_alert_15 and check_sym_15 == "TPSL LONG"
+    alert( freq = alert.freq_once_per_bar_close , message = '{"action":"TPSL LONG","exchange":"BINANCE","symbol":"DOGEUSDT","amount":"0.01"}' )
+    
+    
+    
+
+
+enable_alert_16 = input.bool(title = "BINANCE : DOGEUSDT",defval = false,group = "กรุณาตั้งค่าคู่เทรดที่ต้องการ Alert")
+amount_to_trade_16 = input.float(title = "contract" , defval = 0.01)
+check_sym_16 = request.security(symbol = "DOGEUSDT" ,timeframe= timeframe.period,expression = check_condition())
+if enable_alert_16 and check_sym_16 == "OPEN LONG"
+    alert( freq = alert.freq_once_per_bar_close , message = '{"action":"OPEN LONG","exchange":"BINANCE","symbol":"DOGEUSDT","amount":"0.01"}' )
+if enable_alert_16 and check_sym_16 == "TPSL LONG"
+    alert( freq = alert.freq_once_per_bar_close , message = '{"action":"TPSL LONG","exchange":"BINANCE","symbol":"DOGEUSDT","amount":"0.01"}' )
+    
+    
+    
+
+
+enable_alert_17 = input.bool(title = "BINANCE : DOGEUSDT",defval = false,group = "กรุณาตั้งค่าคู่เทรดที่ต้องการ Alert")
+amount_to_trade_17 = input.float(title = "contract" , defval = 0.01)
+check_sym_17 = request.security(symbol = "DOGEUSDT" ,timeframe= timeframe.period,expression = check_condition())
+if enable_alert_17 and check_sym_17 == "OPEN LONG"
+    alert( freq = alert.freq_once_per_bar_close , message = '{"action":"OPEN LONG","exchange":"BINANCE","symbol":"DOGEUSDT","amount":"0.01"}' )
+if enable_alert_17 and check_sym_17 == "TPSL LONG"
+    alert( freq = alert.freq_once_per_bar_close , message = '{"action":"TPSL LONG","exchange":"BINANCE","symbol":"DOGEUSDT","amount":"0.01"}' )
+    
+    
+    
+
+
+enable_alert_18 = input.bool(title = "BINANCE : DOGEUSDT",defval = false,group = "กรุณาตั้งค่าคู่เทรดที่ต้องการ Alert")
+amount_to_trade_18 = input.float(title = "contract" , defval = 0.01)
+check_sym_18 = request.security(symbol = "DOGEUSDT" ,timeframe= timeframe.period,expression = check_condition())
+if enable_alert_18 and check_sym_18 == "OPEN LONG"
+    alert( freq = alert.freq_once_per_bar_close , message = '{"action":"OPEN LONG","exchange":"BINANCE","symbol":"DOGEUSDT","amount":"0.01"}' )
+if enable_alert_18 and check_sym_18 == "TPSL LONG"
+    alert( freq = alert.freq_once_per_bar_close , message = '{"action":"TPSL LONG","exchange":"BINANCE","symbol":"DOGEUSDT","amount":"0.01"}' )
+    
+    
+    
+
+
+enable_alert_19 = input.bool(title = "BINANCE : DOGEUSDT",defval = false,group = "กรุณาตั้งค่าคู่เทรดที่ต้องการ Alert")
+amount_to_trade_19 = input.float(title = "contract" , defval = 0.01)
+check_sym_19 = request.security(symbol = "DOGEUSDT" ,timeframe= timeframe.period,expression = check_condition())
+if enable_alert_19 and check_sym_19 == "OPEN LONG"
+    alert( freq = alert.freq_once_per_bar_close , message = '{"action":"OPEN LONG","exchange":"BINANCE","symbol":"DOGEUSDT","amount":"0.01"}' )
+if enable_alert_19 and check_sym_19 == "TPSL LONG"
+    alert( freq = alert.freq_once_per_bar_close , message = '{"action":"TPSL LONG","exchange":"BINANCE","symbol":"DOGEUSDT","amount":"0.01"}' )
+    
+    
+    
+
+
+enable_alert_20 = input.bool(title = "BINANCE : DOGEUSDT",defval = false,group = "กรุณาตั้งค่าคู่เทรดที่ต้องการ Alert")
+amount_to_trade_20 = input.float(title = "contract" , defval = 0.01)
+check_sym_20 = request.security(symbol = "DOGEUSDT" ,timeframe= timeframe.period,expression = check_condition())
+if enable_alert_20 and check_sym_20 == "OPEN LONG"
+    alert( freq = alert.freq_once_per_bar_close , message = '{"action":"OPEN LONG","exchange":"BINANCE","symbol":"DOGEUSDT","amount":"0.01"}' )
+if enable_alert_20 and check_sym_20 == "TPSL LONG"
+    alert( freq = alert.freq_once_per_bar_close , message = '{"action":"TPSL LONG","exchange":"BINANCE","symbol":"DOGEUSDT","amount":"0.01"}' )
+    
+    
+    
+
+
+enable_alert_21 = input.bool(title = "BINANCE : DOGEUSDT",defval = false,group = "กรุณาตั้งค่าคู่เทรดที่ต้องการ Alert")
+amount_to_trade_21 = input.float(title = "contract" , defval = 0.01)
+check_sym_21 = request.security(symbol = "DOGEUSDT" ,timeframe= timeframe.period,expression = check_condition())
+if enable_alert_21 and check_sym_21 == "OPEN LONG"
+    alert( freq = alert.freq_once_per_bar_close , message = '{"action":"OPEN LONG","exchange":"BINANCE","symbol":"DOGEUSDT","amount":"0.01"}' )
+if enable_alert_21 and check_sym_21 == "TPSL LONG"
+    alert( freq = alert.freq_once_per_bar_close , message = '{"action":"TPSL LONG","exchange":"BINANCE","symbol":"DOGEUSDT","amount":"0.01"}' )
+    
+    
+    
+
+
+enable_alert_22 = input.bool(title = "BINANCE : DOGEUSDT",defval = false,group = "กรุณาตั้งค่าคู่เทรดที่ต้องการ Alert")
+amount_to_trade_22 = input.float(title = "contract" , defval = 0.01)
+check_sym_22 = request.security(symbol = "DOGEUSDT" ,timeframe= timeframe.period,expression = check_condition())
+if enable_alert_22 and check_sym_22 == "OPEN LONG"
+    alert( freq = alert.freq_once_per_bar_close , message = '{"action":"OPEN LONG","exchange":"BINANCE","symbol":"DOGEUSDT","amount":"0.01"}' )
+if enable_alert_22 and check_sym_22 == "TPSL LONG"
+    alert( freq = alert.freq_once_per_bar_close , message = '{"action":"TPSL LONG","exchange":"BINANCE","symbol":"DOGEUSDT","amount":"0.01"}' )
+    
+    
+    
+
+
+enable_alert_23 = input.bool(title = "BINANCE : DOGEUSDT",defval = false,group = "กรุณาตั้งค่าคู่เทรดที่ต้องการ Alert")
+amount_to_trade_23 = input.float(title = "contract" , defval = 0.01)
+check_sym_23 = request.security(symbol = "DOGEUSDT" ,timeframe= timeframe.period,expression = check_condition())
+if enable_alert_23 and check_sym_23 == "OPEN LONG"
+    alert( freq = alert.freq_once_per_bar_close , message = '{"action":"OPEN LONG","exchange":"BINANCE","symbol":"DOGEUSDT","amount":"0.01"}' )
+if enable_alert_23 and check_sym_23 == "TPSL LONG"
+    alert( freq = alert.freq_once_per_bar_close , message = '{"action":"TPSL LONG","exchange":"BINANCE","symbol":"DOGEUSDT","amount":"0.01"}' )
+    
+    
+    
+
+
+enable_alert_24 = input.bool(title = "BINANCE : DOGEUSDT",defval = false,group = "กรุณาตั้งค่าคู่เทรดที่ต้องการ Alert")
+amount_to_trade_24 = input.float(title = "contract" , defval = 0.01)
+check_sym_24 = request.security(symbol = "DOGEUSDT" ,timeframe= timeframe.period,expression = check_condition())
+if enable_alert_24 and check_sym_24 == "OPEN LONG"
+    alert( freq = alert.freq_once_per_bar_close , message = '{"action":"OPEN LONG","exchange":"BINANCE","symbol":"DOGEUSDT","amount":"0.01"}' )
+if enable_alert_24 and check_sym_24 == "TPSL LONG"
+    alert( freq = alert.freq_once_per_bar_close , message = '{"action":"TPSL LONG","exchange":"BINANCE","symbol":"DOGEUSDT","amount":"0.01"}' )
+    
+    
+    
+
+
+enable_alert_25 = input.bool(title = "BINANCE : DOGEUSDT",defval = false,group = "กรุณาตั้งค่าคู่เทรดที่ต้องการ Alert")
+amount_to_trade_25 = input.float(title = "contract" , defval = 0.01)
+check_sym_25 = request.security(symbol = "DOGEUSDT" ,timeframe= timeframe.period,expression = check_condition())
+if enable_alert_25 and check_sym_25 == "OPEN LONG"
+    alert( freq = alert.freq_once_per_bar_close , message = '{"action":"OPEN LONG","exchange":"BINANCE","symbol":"DOGEUSDT","amount":"0.01"}' )
+if enable_alert_25 and check_sym_25 == "TPSL LONG"
+    alert( freq = alert.freq_once_per_bar_close , message = '{"action":"TPSL LONG","exchange":"BINANCE","symbol":"DOGEUSDT","amount":"0.01"}' )
+    
+    
+    
+
+
+enable_alert_26 = input.bool(title = "BINANCE : DOGEUSDT",defval = false,group = "กรุณาตั้งค่าคู่เทรดที่ต้องการ Alert")
+amount_to_trade_26 = input.float(title = "contract" , defval = 0.01)
+check_sym_26 = request.security(symbol = "DOGEUSDT" ,timeframe= timeframe.period,expression = check_condition())
+if enable_alert_26 and check_sym_26 == "OPEN LONG"
+    alert( freq = alert.freq_once_per_bar_close , message = '{"action":"OPEN LONG","exchange":"BINANCE","symbol":"DOGEUSDT","amount":"0.01"}' )
+if enable_alert_26 and check_sym_26 == "TPSL LONG"
+    alert( freq = alert.freq_once_per_bar_close , message = '{"action":"TPSL LONG","exchange":"BINANCE","symbol":"DOGEUSDT","amount":"0.01"}' )
+    
+    
+    
+
+
+enable_alert_27 = input.bool(title = "BINANCE : DOGEUSDT",defval = false,group = "กรุณาตั้งค่าคู่เทรดที่ต้องการ Alert")
+amount_to_trade_27 = input.float(title = "contract" , defval = 0.01)
+check_sym_27 = request.security(symbol = "DOGEUSDT" ,timeframe= timeframe.period,expression = check_condition())
+if enable_alert_27 and check_sym_27 == "OPEN LONG"
+    alert( freq = alert.freq_once_per_bar_close , message = '{"action":"OPEN LONG","exchange":"BINANCE","symbol":"DOGEUSDT","amount":"0.01"}' )
+if enable_alert_27 and check_sym_27 == "TPSL LONG"
+    alert( freq = alert.freq_once_per_bar_close , message = '{"action":"TPSL LONG","exchange":"BINANCE","symbol":"DOGEUSDT","amount":"0.01"}' )
+    
+    
+    
+
+
+enable_alert_28 = input.bool(title = "BINANCE : DOGEUSDT",defval = false,group = "กรุณาตั้งค่าคู่เทรดที่ต้องการ Alert")
+amount_to_trade_28 = input.float(title = "contract" , defval = 0.01)
+check_sym_28 = request.security(symbol = "DOGEUSDT" ,timeframe= timeframe.period,expression = check_condition())
+if enable_alert_28 and check_sym_28 == "OPEN LONG"
+    alert( freq = alert.freq_once_per_bar_close , message = '{"action":"OPEN LONG","exchange":"BINANCE","symbol":"DOGEUSDT","amount":"0.01"}' )
+if enable_alert_28 and check_sym_28 == "TPSL LONG"
+    alert( freq = alert.freq_once_per_bar_close , message = '{"action":"TPSL LONG","exchange":"BINANCE","symbol":"DOGEUSDT","amount":"0.01"}' )
+    
+    
+    
+
+
+enable_alert_29 = input.bool(title = "BINANCE : DOGEUSDT",defval = false,group = "กรุณาตั้งค่าคู่เทรดที่ต้องการ Alert")
+amount_to_trade_29 = input.float(title = "contract" , defval = 0.01)
+check_sym_29 = request.security(symbol = "DOGEUSDT" ,timeframe= timeframe.period,expression = check_condition())
+if enable_alert_29 and check_sym_29 == "OPEN LONG"
+    alert( freq = alert.freq_once_per_bar_close , message = '{"action":"OPEN LONG","exchange":"BINANCE","symbol":"DOGEUSDT","amount":"0.01"}' )
+if enable_alert_29 and check_sym_29 == "TPSL LONG"
+    alert( freq = alert.freq_once_per_bar_close , message = '{"action":"TPSL LONG","exchange":"BINANCE","symbol":"DOGEUSDT","amount":"0.01"}' )
+    
+    
+    
+
+
+enable_alert_30 = input.bool(title = "BINANCE : DOGEUSDT",defval = false,group = "กรุณาตั้งค่าคู่เทรดที่ต้องการ Alert")
+amount_to_trade_30 = input.float(title = "contract" , defval = 0.01)
+check_sym_30 = request.security(symbol = "DOGEUSDT" ,timeframe= timeframe.period,expression = check_condition())
+if enable_alert_30 and check_sym_30 == "OPEN LONG"
+    alert( freq = alert.freq_once_per_bar_close , message = '{"action":"OPEN LONG","exchange":"BINANCE","symbol":"DOGEUSDT","amount":"0.01"}' )
+if enable_alert_30 and check_sym_30 == "TPSL LONG"
+    alert( freq = alert.freq_once_per_bar_close , message = '{"action":"TPSL LONG","exchange":"BINANCE","symbol":"DOGEUSDT","amount":"0.01"}' )
+    
+    
+    
+
+
+enable_alert_31 = input.bool(title = "BINANCE : DOGEUSDT",defval = false,group = "กรุณาตั้งค่าคู่เทรดที่ต้องการ Alert")
+amount_to_trade_31 = input.float(title = "contract" , defval = 0.01)
+check_sym_31 = request.security(symbol = "DOGEUSDT" ,timeframe= timeframe.period,expression = check_condition())
+if enable_alert_31 and check_sym_31 == "OPEN LONG"
+    alert( freq = alert.freq_once_per_bar_close , message = '{"action":"OPEN LONG","exchange":"BINANCE","symbol":"DOGEUSDT","amount":"0.01"}' )
+if enable_alert_31 and check_sym_31 == "TPSL LONG"
+    alert( freq = alert.freq_once_per_bar_close , message = '{"action":"TPSL LONG","exchange":"BINANCE","symbol":"DOGEUSDT","amount":"0.01"}' )
+    
+    
+    
+
+
+enable_alert_32 = input.bool(title = "BINANCE : DOGEUSDT",defval = false,group = "กรุณาตั้งค่าคู่เทรดที่ต้องการ Alert")
+amount_to_trade_32 = input.float(title = "contract" , defval = 0.01)
+check_sym_32 = request.security(symbol = "DOGEUSDT" ,timeframe= timeframe.period,expression = check_condition())
+if enable_alert_32 and check_sym_32 == "OPEN LONG"
+    alert( freq = alert.freq_once_per_bar_close , message = '{"action":"OPEN LONG","exchange":"BINANCE","symbol":"DOGEUSDT","amount":"0.01"}' )
+if enable_alert_32 and check_sym_32 == "TPSL LONG"
+    alert( freq = alert.freq_once_per_bar_close , message = '{"action":"TPSL LONG","exchange":"BINANCE","symbol":"DOGEUSDT","amount":"0.01"}' )
+    
+    
+    
+
+
+enable_alert_33 = input.bool(title = "BINANCE : DOGEUSDT",defval = false,group = "กรุณาตั้งค่าคู่เทรดที่ต้องการ Alert")
+amount_to_trade_33 = input.float(title = "contract" , defval = 0.01)
+check_sym_33 = request.security(symbol = "DOGEUSDT" ,timeframe= timeframe.period,expression = check_condition())
+if enable_alert_33 and check_sym_33 == "OPEN LONG"
+    alert( freq = alert.freq_once_per_bar_close , message = '{"action":"OPEN LONG","exchange":"BINANCE","symbol":"DOGEUSDT","amount":"0.01"}' )
+if enable_alert_33 and check_sym_33 == "TPSL LONG"
+    alert( freq = alert.freq_once_per_bar_close , message = '{"action":"TPSL LONG","exchange":"BINANCE","symbol":"DOGEUSDT","amount":"0.01"}' )
+    
+    
+    
+
+
+enable_alert_34 = input.bool(title = "BINANCE : DOGEUSDT",defval = false,group = "กรุณาตั้งค่าคู่เทรดที่ต้องการ Alert")
+amount_to_trade_34 = input.float(title = "contract" , defval = 0.01)
+check_sym_34 = request.security(symbol = "DOGEUSDT" ,timeframe= timeframe.period,expression = check_condition())
+if enable_alert_34 and check_sym_34 == "OPEN LONG"
+    alert( freq = alert.freq_once_per_bar_close , message = '{"action":"OPEN LONG","exchange":"BINANCE","symbol":"DOGEUSDT","amount":"0.01"}' )
+if enable_alert_34 and check_sym_34 == "TPSL LONG"
+    alert( freq = alert.freq_once_per_bar_close , message = '{"action":"TPSL LONG","exchange":"BINANCE","symbol":"DOGEUSDT","amount":"0.01"}' )
+    
+    
+    
+
+
+enable_alert_35 = input.bool(title = "BINANCE : DOGEUSDT",defval = false,group = "กรุณาตั้งค่าคู่เทรดที่ต้องการ Alert")
+amount_to_trade_35 = input.float(title = "contract" , defval = 0.01)
+check_sym_35 = request.security(symbol = "DOGEUSDT" ,timeframe= timeframe.period,expression = check_condition())
+if enable_alert_35 and check_sym_35 == "OPEN LONG"
+    alert( freq = alert.freq_once_per_bar_close , message = '{"action":"OPEN LONG","exchange":"BINANCE","symbol":"DOGEUSDT","amount":"0.01"}' )
+if enable_alert_35 and check_sym_35 == "TPSL LONG"
+    alert( freq = alert.freq_once_per_bar_close , message = '{"action":"TPSL LONG","exchange":"BINANCE","symbol":"DOGEUSDT","amount":"0.01"}' )
+    
+    
+    
+
+
+enable_alert_36 = input.bool(title = "BINANCE : DOGEUSDT",defval = false,group = "กรุณาตั้งค่าคู่เทรดที่ต้องการ Alert")
+amount_to_trade_36 = input.float(title = "contract" , defval = 0.01)
+check_sym_36 = request.security(symbol = "DOGEUSDT" ,timeframe= timeframe.period,expression = check_condition())
+if enable_alert_36 and check_sym_36 == "OPEN LONG"
+    alert( freq = alert.freq_once_per_bar_close , message = '{"action":"OPEN LONG","exchange":"BINANCE","symbol":"DOGEUSDT","amount":"0.01"}' )
+if enable_alert_36 and check_sym_36 == "TPSL LONG"
+    alert( freq = alert.freq_once_per_bar_close , message = '{"action":"TPSL LONG","exchange":"BINANCE","symbol":"DOGEUSDT","amount":"0.01"}' )
+    
+    
+    
+
+
+enable_alert_37 = input.bool(title = "BINANCE : DOGEUSDT",defval = false,group = "กรุณาตั้งค่าคู่เทรดที่ต้องการ Alert")
+amount_to_trade_37 = input.float(title = "contract" , defval = 0.01)
+check_sym_37 = request.security(symbol = "DOGEUSDT" ,timeframe= timeframe.period,expression = check_condition())
+if enable_alert_37 and check_sym_37 == "OPEN LONG"
+    alert( freq = alert.freq_once_per_bar_close , message = '{"action":"OPEN LONG","exchange":"BINANCE","symbol":"DOGEUSDT","amount":"0.01"}' )
+if enable_alert_37 and check_sym_37 == "TPSL LONG"
+    alert( freq = alert.freq_once_per_bar_close , message = '{"action":"TPSL LONG","exchange":"BINANCE","symbol":"DOGEUSDT","amount":"0.01"}' )
+    
+    
+    
+
+
+enable_alert_38 = input.bool(title = "BINANCE : DOGEUSDT",defval = false,group = "กรุณาตั้งค่าคู่เทรดที่ต้องการ Alert")
+amount_to_trade_38 = input.float(title = "contract" , defval = 0.01)
+check_sym_38 = request.security(symbol = "DOGEUSDT" ,timeframe= timeframe.period,expression = check_condition())
+if enable_alert_38 and check_sym_38 == "OPEN LONG"
+    alert( freq = alert.freq_once_per_bar_close , message = '{"action":"OPEN LONG","exchange":"BINANCE","symbol":"DOGEUSDT","amount":"0.01"}' )
+if enable_alert_38 and check_sym_38 == "TPSL LONG"
+    alert( freq = alert.freq_once_per_bar_close , message = '{"action":"TPSL LONG","exchange":"BINANCE","symbol":"DOGEUSDT","amount":"0.01"}' )
+    
+    
+    
+
+
+enable_alert_39 = input.bool(title = "BINANCE : DOGEUSDT",defval = false,group = "กรุณาตั้งค่าคู่เทรดที่ต้องการ Alert")
+amount_to_trade_39 = input.float(title = "contract" , defval = 0.01)
+check_sym_39 = request.security(symbol = "DOGEUSDT" ,timeframe= timeframe.period,expression = check_condition())
+if enable_alert_39 and check_sym_39 == "OPEN LONG"
+    alert( freq = alert.freq_once_per_bar_close , message = '{"action":"OPEN LONG","exchange":"BINANCE","symbol":"DOGEUSDT","amount":"0.01"}' )
+if enable_alert_39 and check_sym_39 == "TPSL LONG"
+    alert( freq = alert.freq_once_per_bar_close , message = '{"action":"TPSL LONG","exchange":"BINANCE","symbol":"DOGEUSDT","amount":"0.01"}' )
+    
+    
+    
+
+
+enable_alert_40 = input.bool(title = "BINANCE : DOGEUSDT",defval = false,group = "กรุณาตั้งค่าคู่เทรดที่ต้องการ Alert")
+amount_to_trade_40 = input.float(title = "contract" , defval = 0.01)
+check_sym_40 = request.security(symbol = "DOGEUSDT" ,timeframe= timeframe.period,expression = check_condition())
+if enable_alert_40 and check_sym_40 == "OPEN LONG"
+    alert( freq = alert.freq_once_per_bar_close , message = '{"action":"OPEN LONG","exchange":"BINANCE","symbol":"DOGEUSDT","amount":"0.01"}' )
+if enable_alert_40 and check_sym_40 == "TPSL LONG"
+    alert( freq = alert.freq_once_per_bar_close , message = '{"action":"TPSL LONG","exchange":"BINANCE","symbol":"DOGEUSDT","amount":"0.01"}' )
+    
+    
+    
